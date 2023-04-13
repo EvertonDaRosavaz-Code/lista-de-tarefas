@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+section{
+    background: #201b2c;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding:10px;
+}
+
+
+.createTarefa{
+    height: 30%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    background: #2f2841;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+input[type="time"],
+input[type="date"],
+input[type="text"]:focus{
+    outline: none;
+}
+
+input[type="text"]{
+    width:90%;
+    border:none;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+
+input[type="date"]{
+    width:90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+input[type="time"]{
+    width:90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-transform: uppercase;
+}
+
+ button:hover{
+    transition: .5s ease-in-out;
+    background-color: #ffffffdd;
+}
+
+
+
+.conteinerTask{
+    width: 100%;
+    padding: 0px 0px 0px 100px;
+}
+
+.tarefas
+{
+    background: #2f2841;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    overflow-y: visible;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:15px;
+    gap: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+
+  
+.tarefas::-webkit-scrollbar {
+    width: 12px;
+}
+  
+.tarefas::-webkit-scrollbar-track {
+    background: transparent ;
+}
+  
+.tarefas::-webkit-scrollbar-thumb {
+    background-color: #2f2841;
+    border-radius: 20px;
+    border: 3px solid transparent;
+}
+
+footer{
+    background: #201b2c;
+}
+
+
+/*Create Element*/
+.tarefa{
+    color: white;
+    border: solid 2px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 95%;
+    padding: 15px;
+   
+}
+.tarefas{
+    overflow: hidden;
+    overflow-y:  visible;
+}
+.tarefa .left{
+    width: 100%;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tarefa .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    border: solid 1px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.deletarImg{
+    cursor: pointer;
+}
+
+.editarImg{
+    cursor: pointer;
+}
+
