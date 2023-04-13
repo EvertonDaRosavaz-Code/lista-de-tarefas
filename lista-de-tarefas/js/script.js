@@ -162,8 +162,8 @@ function createElement(tarefa, data, tempo, chave){
     
     /*=-=-=-===-==-=-=-=-=-=-=-=-=-=-=*/
     //Por as imagens dentro dos elementros imgs
-    imgX.src = '../img/cross.png';
-    imgPincel.src = '../img/pencil.png';
+    imgX.src = 'lista-de-tarefas/img/cross.png';
+    imgPincel.src = 'lista-de-tarefas/img/pencil.png';
 
     /*Adicionar onclick as imagens*/ 
     imgX.setAttribute('onclick', `deletar(${chave})`);
