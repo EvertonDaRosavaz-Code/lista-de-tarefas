@@ -1,4 +1,4 @@
-# lista-de-tarefas
+# lista de tarefas
 <div>
 <p>
       Esse projeto é uma lista de tarefas simples utilizando Local Storage.<br>
