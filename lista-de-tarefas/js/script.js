@@ -1,5 +1,3 @@
-
-
 //variavel globals 
 let conteiner_tarefas = document.getElementById('tarefas');
 
@@ -25,8 +23,6 @@ window.onload = () =>{
 }
 
 
-
-
 // Essa variavel vai reveber a chave vinda da função editar();
 let newKey;
 document.getElementById('inBtn').addEventListener('click', ()=>{
@@ -38,10 +34,6 @@ document.getElementById('inBtn').addEventListener('click', ()=>{
         let newTaksdate = Taskdate.value;
 
         let obj  = `{"tarefa":"${newTask}", "date":"${newTaksdate}", "time":"${newTakstime}"}`;
-        localStorage.setItem(newKey, obj);
-
-        //deletar(newKey);
-        //createElement(newTask, newTaksdate, newTakstime, newKey)
 
         const Toast = Swal.mixin({
             toast: true,
@@ -60,6 +52,10 @@ document.getElementById('inBtn').addEventListener('click', ()=>{
             title: 'Tarefa alterada com sucesso'
           })
 
+        
+          deletar(newKey);
+          createElement(newTask, newTaksdate, newTakstime, newKey);
+          localStorage.setItem(newKey, obj);
           spanBtn.textContent = 'Criar tarefa';
     }
 
